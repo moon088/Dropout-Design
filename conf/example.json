@@ -1,0 +1,32 @@
+{
+    "network": "cnn",
+    "dataset": "cifar10",
+    "epochs": 1,
+    "experiments": 2,
+    "shuffle": false,
+    "design":
+    {
+        "design_csv": null,
+        "update_design_method": "shift_block",
+        "repeat": 1,
+        "degrees": 6,
+        "prime_number": 2,
+        "t_flats": 5,
+        "dropout_mode": "non"
+    },
+    "manual":
+    {
+        "num_units": 64,
+        "num_layers": 2,
+        "num_batches": 32,
+        "dropout_rate": 0.5
+    },
+    "data_augmentation": false,
+    "optimizer":
+    {
+         "name": "SGD",
+         "learning_rate": null,
+         "decay": null
+    },
+    "checkpoint_path": "./model_checkpoint"
+}
